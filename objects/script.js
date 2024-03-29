@@ -1,5 +1,5 @@
 let box = document.getElementById("box");
-
+let speed = 10;
 let rectangle = {
   x:0,
   y:0,
@@ -18,20 +18,20 @@ let rectangle = {
     window.addEventListener("keydown",(ev)=>{
       console.log(ev.key);
       if(ev.key == "d") {
-        this.x = this.x+10;
+        this.x = this.x+speed;
         this.setPosition(this.x, this.y);
       } else {
         if(ev.key == "a") {
-          this.x = this.x-10;
+          this.x = this.x-speed;
           this.setPosition(this.x, this.y);
         }
       }
       if(ev.key == "w") {
-        this.y = this.y-10;
+        this.y = this.y-speed;
         this.setPosition(this.x, this.y);
       } else {
         if(ev.key == "s") {
-          this.y = this.y+10;
+          this.y = this.y+speed;
           this.setPosition(this.x, this.y);
         }
       }

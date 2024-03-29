@@ -10,7 +10,7 @@ body, html {
   height: 50px;
   background-color: #000;
   border-radius: 5px;
-  box-shadow: 5px 5px 1px #0000008c;
+  box-shadow: 10px 5px 3px #0000008c;
   transition: all 0.01s ease-in-out;
   /* background-image: url("assets/pngwing.com.png"); */
   /* background-size: cover; */
