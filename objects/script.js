@@ -40,7 +40,5 @@ let rectangle = {
 
 }
 
-
-rectangle.setColor("red");
+// rectangle.setColor("red");
 rectangle.controls();
-// rectangle.setPosition(200,100);
