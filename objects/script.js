@@ -20,19 +20,23 @@ let rectangle = {
       if(ev.key == "d") {
         this.x = this.x+speed;
         this.setPosition(this.x, this.y);
+        box.innerText = "right";
       } else {
         if(ev.key == "a") {
           this.x = this.x-speed;
           this.setPosition(this.x, this.y);
+          box.innerText = "left";
         }
       }
       if(ev.key == "w") {
         this.y = this.y-speed;
         this.setPosition(this.x, this.y);
+        box.innerText = "up";
       } else {
         if(ev.key == "s") {
           this.y = this.y+speed;
           this.setPosition(this.x, this.y);
+          box.innerText = "down";
         }
       }
     });
@@ -40,5 +44,4 @@ let rectangle = {
 
 }
 
-// rectangle.setColor("red");
 rectangle.controls();
